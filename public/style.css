@@ -3,4 +3,11 @@
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk-Bold') format('opentype');
+}
+
+h1 {
+  font-family: 'Space Grotesk';
+}
