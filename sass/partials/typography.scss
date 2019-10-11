@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('fonts/SpaceGrotesk-Bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+h1 {
+  font-family: 'SpaceGrotesk';
+  font-weight: bold;
+}

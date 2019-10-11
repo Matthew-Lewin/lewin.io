@@ -1,4 +1,6 @@
-* {
-  width: 800px;
-  margin: 0 auto;
-}
+@import 'partials/utility.scss';
+@import 'partials/variables.scss';
+@import 'pages/layouts.scss';
+@import 'partials/basics.scss';
+@import 'pages/index.scss';
+@import 'partials/typography.scss';
