@@ -1,6 +1,6 @@
-@import 'partials/utility.scss';
-@import 'partials/variables.scss';
-@import 'pages/layouts.scss';
-@import 'partials/basics.scss';
-@import 'pages/index.scss';
-@import 'partials/typography.scss';
+@import 'base/utility.scss';
+@import 'abstracts/variables.scss';
+@import 'layout/layouts.scss';
+@import 'base/basics.scss';
+@import 'layout/index.scss';
+@import 'base/typography.scss';

@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "mycli": "^1.5.1",
-    "mysql": "^2.17.1"
+    "mysql": "^2.17.1",
+    "node-sass": "^4.12.0"
   },
   "devDependencies": {
     "eslint": "6.5.1",
