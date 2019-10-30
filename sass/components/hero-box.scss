@@ -57,7 +57,6 @@
   .hero-text {
     &__heading {
       font-size: 4rem;
-      width: 75%;
     }
   }
 
@@ -74,21 +73,12 @@
       height: auto;
       filter: grayscale(80%) brightness(70%)
         drop-shadow(0 4rem 2rem rgba(0, 0, 0, 0.5));
-      clip-path: polygon(
-        0px 0px,
-        100% 0px,
-        100% 88%,
-        47% 100%,
-        0 84.8%
-      );
+      clip-path: circle();
       position: relative;
     }
   }
   .hero-link {
     display: inline-block;
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
   }
   .hero-copy {
     background: rgba($color-grey-900, 0.6);
