@@ -1,7 +1,7 @@
 {
   "title": "Lewin.io",
-  "heroText": "Full Stack Life",
+  "heroText": "Full stack development",
   "heroImageSrc": "/images/profile_1.png",
   "heroImageAlt": "A closeup of Matthew's face",
-  "aboutMeText": "I’m Matthew Lewin - a full-stack developer specializing in Node.js, modern CSS, UI development and accessibility. I am serious about writing robust back-end architecture and sleek, performant front-end code that is accessible to all. Find out more about my work or hire me."
+  "aboutMeText": "I’m Matthew Lewin - a full-stack developer specializing in Node.js, modern CSS and accessible UI development. I am serious about writing robust back-end architecture and sleek, performant front-end code that is accessible to all. Find out more about my work or hire me."
 }
