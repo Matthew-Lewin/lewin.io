@@ -51,18 +51,36 @@
   height: 90vh;
   position: relative;
   .hero-text {
-    position: relative;
-    top: 10rem;
+    margin-top: 10rem;
+  }
+
+  .hero-text {
+    &__heading {
+      font-size: 4rem;
+    }
   }
 
   .hero-image {
     width: 30%;
     position: absolute;
+    right: 10%;
+    top: 10%;
+    z-index: -2;
+    max-width: 500px;
 
-    &__image {
+    &__picture {
       width: 100%;
       height: auto;
-      z-index: -2;
+      filter: grayscale(80%) brightness(70%);
     }
+  }
+  .hero-link {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  .hero-copy {
+    background: rgba($color-grey-900, 0.6);
   }
 }

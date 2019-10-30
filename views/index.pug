@@ -2,16 +2,14 @@ extends layout
 
 block content
   main
-    section(class="section-hero")
-      div(class="container")
-        div(class="hero-text")
-          h1(class="hero-text__heading")= heroText
-        div(class='hero-image')
-          img(class="hero-image__picture" src=heroImageSrc, alt=heroImageAlt)
-        div(class="row")
-          div(class="col-1-of-3")
-            a(href="/") See my work
-          div(class="col-1-of-3")
-            a(href="/") Let's work together
+    section.section-hero
+      div.container
+        div.hero-text.u-margin-bottom-small
+          h1.hero-text__heading= heroText
+        div.hero-image
+          img.hero-image__picture(src=heroImageSrc, alt=heroImageAlt)
+        div.u-margin-bottom-small
+          a.hero-link(href="/") See my work
+          a.hero-link(href="/") Let's work together
         
-        p #{aboutMeText}
+        p.hero-copy #{aboutMeText}
