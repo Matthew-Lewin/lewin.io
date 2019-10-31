@@ -2,7 +2,7 @@ extends layout
 
 block content
   main
-    section.section-hero
+    section.section-hero.u-margin-bottom-large
       div.container
         div.row
           div.hero-text.u-margin-bottom-small.col-3-of-4
@@ -20,7 +20,7 @@ block content
           h2.mail-signup__heading Newsletter
           form.mail-signup__form(method="POST", action="")
             div.row
-              div.col-3-of-4
+              div.col-2-of-3
                 label.mail-signup__label(for="mail-signup") Email address
                 input.mail-signup__input#mail-signup(type="email", name="email")
                 button.mail-signup__button(type="submit") Submit
