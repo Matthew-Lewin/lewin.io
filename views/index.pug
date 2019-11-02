@@ -1,30 +1,15 @@
 extends layout
 
 block content
+  nav
+  
   main
-    section.section-hero.u-margin-bottom-large
-      div.container
-        div.row
-          div.hero-text.u-margin-bottom-small.col-3-of-4
-            h1.hero-text__heading= heroText
-        div.hero-image
-          img.hero-image__picture(src=heroImageSrc, alt=heroImageAlt)
-        div.u-margin-bottom-small.row
-          div.col-1-of-3
-            a.hero-link(href="/") See my work
-          div.col-1-of-3
-            a.hero-link(href="/") Let's work together
-        
-        p.hero-copy #{aboutMeText}
-        div.mail-signup.u-margin-top-medium
-          h2.mail-signup__heading Newsletter
-          form.mail-signup__form(method="POST", action="")
-            div.row
-              div.col-2-of-3
-                label.mail-signup__label(for="mail-signup") Email address
-                input.mail-signup__input#mail-signup(type="email", name="email")
-                button.mail-signup__button(type="submit") Submit
+    h1= title
+    p Testing regular font face
+    p #[em this s*** is italics, I.T.A.L.I.C.S]
               
 
     //Blog posts, if exists
     //Projects, if exists
+
+    //heroText, heroImageSrc, heroImageAlt, aboutMeText
