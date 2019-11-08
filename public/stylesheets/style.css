@@ -162,9 +162,23 @@ a:focus {
   box-shadow: inset 0 -0.85em 0 #702459;
 }
 
-.section-hero {
-  border-top: 5px solid #702459;
+.home-page {
+  padding-top: 1rem;
+  border-top: 3px solid #2c7a7b;
+}
+
+.home-layout {
+  height: 100%;
+  display: flex;
+  flex-direction: Column;
+  justify-content: space-between;
   height: 90vh;
+}
+.home-layout__top {
+  flex: none;
+}
+.home-layout__bottom {
+  flex: none;
 }
 
 @font-face {
@@ -386,6 +400,7 @@ em {
 
 .flex-grid {
   display: flex;
+  flex-wrap: wrap;
 }
 .flex-grid [class*=col-]:not(:last-child) {
   margin-right: 2rem;
@@ -400,7 +415,7 @@ em {
   width: calc((100% - (2 * 2rem)) * (1 / 2));
 }
 .flex-grid .col-3-of-4 {
-  width: calc((100% - (1 * 2rem)) * (3 / 4));
+  width: calc((100% - (3 * 2rem)) * (3 / 4));
 }
 .flex-grid .col-1-of-3 {
   width: calc((100% - (2 * 2rem)) * (1 / 3));
