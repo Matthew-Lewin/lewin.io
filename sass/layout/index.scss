@@ -1,6 +1,6 @@
 .home-page {
-  padding-top: 1rem;
-  border-top: 3px solid $color-teal-700;
+  padding-top: 2rem;
+  border-top: 3px solid $color-red-700;
 }
 
 .home-layout {
@@ -15,5 +15,10 @@
   }
   &__bottom {
     flex: none;
+
+    [class*='col-'] {
+      border-top: 3px solid $color-grey-500;
+      padding-top: 1rem;
+    }
   }
 }
