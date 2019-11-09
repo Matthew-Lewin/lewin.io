@@ -8,7 +8,7 @@ $color-red-700: #c53030; // Main Red? */
 }
 
 body {
-  background-color: #12171f;
+  background-color: #11141c;
   z-index: 1;
 }
 
@@ -149,7 +149,7 @@ body {
 a:link,
 a:visited {
   color: #e2e8f0;
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: none;
   box-shadow: inset 0 -0.07em 0 #ed64a6;
   transition: all 0.3s;
@@ -179,10 +179,6 @@ a:focus {
 }
 .home-layout__bottom {
   flex: none;
-}
-.home-layout__bottom [class*=col-] {
-  border-top: 3px solid #a0aec0;
-  padding-top: 1rem;
 }
 
 @font-face {
@@ -219,14 +215,14 @@ body {
   font-size: 2rem;
   font-weight: normal;
   line-height: 1.4;
-  color: #cbd5e0;
+  color: #a0aec0;
 }
 
 h1 {
   font-weight: bold;
   font-size: 2.5rem;
   font-family: "IBM Plex Sans";
-  color: #e2e8f0;
+  color: #cbd5e0;
   letter-spacing: 1.5px;
   line-height: 1;
   margin-bottom: 1rem;
@@ -235,6 +231,7 @@ h1 {
 h2 {
   font-weight: 600;
   font-size: 2rem;
+  color: #cbd5e0;
   letter-spacing: 1px;
 }
 

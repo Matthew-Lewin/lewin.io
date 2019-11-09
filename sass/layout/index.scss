@@ -16,9 +16,10 @@
   &__bottom {
     flex: none;
 
-    [class*='col-'] {
-      border-top: 3px solid $color-grey-500;
-      padding-top: 1rem;
-    }
+    //TODO: Better with or without top border??? ⁉
+    // [class*='col-'] {
+    //   border-top: 3px solid $color-grey-500;
+    //   padding-top: 1rem;
+    // }
   }
 }
