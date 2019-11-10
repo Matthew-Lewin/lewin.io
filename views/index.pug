@@ -13,7 +13,7 @@ block content
                 h1.heading-primary= name
                 h2.heading-secondary= heroText
               div.col-1-of-4
-                nav
+                nav.main-nav
                   a(href='/') Home
                   br
                   a(href='/projects') Projects
@@ -38,13 +38,19 @@ block content
                 h2.home-layout__links Latest writing
                 p article one
                 p article 2
-              div.col-1-of-4.col--offset-2-of-4
+              div.col-1-of-4
                 h2.home-layout__links Links
                 a(href='https://twitter.com/Matthew_M_Lewin' target='_blank') Twitter
                 br
                 a(href='https://www.linkedin.com/in/matthew-lewin/' target='_blank') LinkedIn
                 br
                 a(href='https://github.com/Matthew-Lewin/' target='_blank') Github
+              div.col-2-of-4
+                h2 Join my mailing list
+                form.mail-form(action="/" method="POST")
+                  label.mail-form__label(for="email-signup") Email
+                  input.mail-form__input#email-signup(type="email" placeholder="name@email.com")
+                  button.u-margin-top-small.mail-form__button(type="submit") Submit
 
     //- Blog posts, if exists
     //- Projects, if exists
