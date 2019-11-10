@@ -10,10 +10,24 @@ block content
           div.home-layout__top
             div.flex-grid
               div.col-2-of-4
-                h1= name
-                h2= heroText
+                h1.heading-primary= name
+                h2.heading-secondary= heroText
+              div.col-1-of-4.col--offset-1-of-4
+                nav
+                  a(href='/') Home
+                  br
+                  a(href='/projects') Projects
+                  br
+                  a(href='/blog') Blog
+                  
           div.content-area
-            p #{aboutMeText}
+            div.hero-section
+              div.hero-section__initial.hero-section__initial--a m
+              div.hero-section__initial.hero-section__initial--b l
+          
+          //-  p #{aboutMeText}
+
+
           //- TODO:Switch between 3 Areas:
           //-   Flashy area: colorful shapes, desaturated pic of me (Start here) 😘
           //-   About me
@@ -21,19 +35,16 @@ block content
           div.home-layout__bottom
             div.flex-grid
               div.col-1-of-4
-                h2.home-layout__links My work
-                a(href='/projects') Projects
-                br
-                a(href='/Blog') Blog
-              div.col-1-of-4
                 h2.home-layout__links Latest writing
                 p article one
                 p article 2
-              div.col-1-of-4
+              div.col-1-of-4.col--offset-2-of-4
                 h2.home-layout__links Links
                 a(href='https://twitter.com/Matthew_M_Lewin' target='_blank') Twitter
                 br
                 a(href='https://www.linkedin.com/in/matthew-lewin/' target='_blank') LinkedIn
+                br
+                a(href='https://github.com/Matthew-Lewin/' target='_blank') Github
 
     //- Blog posts, if exists
     //- Projects, if exists

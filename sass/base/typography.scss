@@ -39,22 +39,30 @@ body {
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 2rem;
   font-family: 'IBM Plex Sans';
-  color: $color-grey-400;
+  color: $color-grey-300;
   letter-spacing: 1.5px;
-  line-height: 1;
+  line-height: 0.8;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2rem;
   color: $color-grey-400;
   letter-spacing: 1px;
 }
 
-em {
+em,
+i {
   font-style: italic;
+}
+
+.heading-primary {
+}
+
+.heading-secondary {
+  font-weight: 400;
 }

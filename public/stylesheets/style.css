@@ -172,12 +172,13 @@ a:focus {
   display: flex;
   flex-direction: Column;
   justify-content: space-between;
-  height: 90vh;
 }
 .home-layout__top {
+  height: 10vh;
   flex: none;
 }
 .home-layout__bottom {
+  height: 10vh;
   flex: none;
 }
 
@@ -219,24 +220,29 @@ body {
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 2rem;
   font-family: "IBM Plex Sans";
-  color: #cbd5e0;
+  color: #e2e8f0;
   letter-spacing: 1.5px;
-  line-height: 1;
+  line-height: 0.8;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2rem;
   color: #cbd5e0;
   letter-spacing: 1px;
 }
 
-em {
+em,
+i {
   font-style: italic;
+}
+
+.heading-secondary {
+  font-weight: 400;
 }
 
 /* .hero-box {
@@ -413,7 +419,7 @@ em {
   width: calc((100% - (3 * 2rem)) * (1 / 4));
 }
 .flex-grid .col-2-of-4 {
-  width: calc((100% - (2 * 2rem)) * (1 / 2));
+  width: calc((100% - (3 * 2rem)) * (1 / 2));
 }
 .flex-grid .col-3-of-4 {
   width: calc((100% - (3 * 2rem)) * (3 / 4));
@@ -427,11 +433,48 @@ em {
 .flex-grid .col-1-of-2 {
   width: calc((100% - (1 * 2rem)) * (1 / 2));
 }
+.flex-grid .col--offset-1-of-4 {
+  margin-left: calc( (100% - (3 * 2rem)) * (1 / 4) );
+}
+.flex-grid .col--offset-2-of-4 {
+  margin-left: calc( (100% - (3 * 2rem)) * (1 / 2) );
+}
+.flex-grid .col--offset-3-of-4 {
+  margin-left: calc( (100% - (3 * 2rem)) * (3 / 4) );
+}
+.flex-grid .col--offset-1-of-3 {
+  margin-left: calc( (100% - (2 * 2rem)) * (1 / 3) );
+}
+.flex-grid .col--offset-2-of-3 {
+  margin-left: calc( (100% - (1 * 2rem)) * (2 / 3) );
+}
+.flex-grid .col--offset-1-of-2 {
+  margin-left: calc( (100% - (1 * 2rem)) * (1 / 2) );
+}
 
 /* @media (max-width: ) {
   .flex-grid {
     display:block;
   }
 } */
+.hero-section {
+  position: relative;
+  height: 70vh;
+}
+.hero-section__initial {
+  font-size: 35rem;
+  font-weight: 700;
+  position: absolute;
+}
+.hero-section__initial--a {
+  color: #702459;
+  bottom: -5rem;
+  left: -2rem;
+}
+.hero-section__initial--b {
+  color: rgba(245, 245, 245, 0.4);
+  bottom: -5rem;
+  left: 20rem;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+.hero-section {
+  position: relative;
+  height: 70vh;
+
+  &__initial {
+    font-size: 35rem;
+    font-weight: 700;
+    position: absolute;
+
+    &--a {
+      color: $color-red-700;
+      bottom: -5rem;
+      left: -2rem;
+    }
+    &--b {
+      color: rgba($color-grey-200, 0.4);
+      bottom: -5rem;
+      left: 20rem;
+    }
+  }
+}
