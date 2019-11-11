@@ -168,17 +168,17 @@ a:focus {
 }
 
 .home-layout {
-  height: 100%;
   display: flex;
   flex-direction: Column;
   justify-content: space-between;
 }
+.home-layout .content-area {
+  height: 60vh;
+}
 .home-layout__top {
-  height: 10vh;
   flex: none;
 }
 .home-layout__bottom {
-  height: 10vh;
   flex: none;
 }
 
@@ -478,10 +478,6 @@ i {
   color: rgba(245, 245, 245, 0.4);
   bottom: 0;
   left: 20rem;
-}
-
-.main-nav {
-  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
