@@ -32,3 +32,11 @@
     padding: 0.5rem 2rem;
   }
 }
+
+//-This is the mailing signup
+//- div.col-2-of-4
+//-   h2 Join my mailing list
+//-   form.mail-form(action="/" method="POST")
+//-     label.mail-form__label(for="email-signup") Email
+//-     input.mail-form__input#email-signup(type="email" placeholder="name@email.com")
+//-     button.u-margin-top-small.mail-form__button(type="submit") Submit
