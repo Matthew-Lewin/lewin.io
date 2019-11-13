@@ -20,14 +20,15 @@
   }
   &__button {
     line-height: 1.6rem;
-    border: 2px solid $color-red-700;
-    background-color: $color-red-700;
+    border: 2px solid $color-grey-500;
+    background-color: $color-grey-500;
     font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont,
       'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: 2rem;
     font-weight: 700;
-    color: $color-grey-200;
+    border-radius: 4px;
+    color: $color-grey-900;
     padding: 0.5rem 2rem;
   }
 }
