@@ -1,16 +1,13 @@
 .home-page {
-  padding-top: 2rem;
   border-top: 3px solid $color-red-700;
 }
 
 .home-layout {
+  padding-top: 4rem;
   display: flex;
+  height: 90vh;
   flex-direction: Column;
   justify-content: space-between;
-
-  .content-area {
-    height: 60vh;
-  }
 
   &__top {
     flex: none;
