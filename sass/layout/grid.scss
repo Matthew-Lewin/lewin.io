@@ -1,6 +1,7 @@
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 
   [class*='col-'] {
     &:not(:last-child) {
