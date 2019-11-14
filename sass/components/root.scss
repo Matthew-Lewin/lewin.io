@@ -1,3 +1,81 @@
 .root {
   flex: 2 1 auto;
+  align-self: flex-start;
+
+  .intro-text {
+    backface-visibility: hidden;
+    overflow: hidden inherit;
+    font-size: $font-size-1;
+    line-height: 1;
+
+    &__part-1,
+    &__part-2 {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    &__part-1 {
+      display: inline-block;
+      animation: showup 7s;
+    }
+    &__part-2 {
+      display: block;
+      width: 0px;
+      animation: reveal 7s;
+      animation-fill-mode: both;
+      &__slide {
+        display: inline;
+        margin-left: -35rem;
+        animation: slidein 7s;
+      }
+    }
+  }
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -80rem;
+  }
+  20% {
+    margin-left: -80rem;
+  }
+  35% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  20% {
+    opacity: 1;
+    width: 0;
+  }
+  30% {
+    width: 100%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
 }

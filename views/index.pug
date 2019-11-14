@@ -7,15 +7,6 @@ block content
     section.home-page
       div.container
         div.home-layout
-          //- .root is the area where content will be hot swapped via JS
-          div.root
-            p.u-margin-top-large #{aboutMeText}
-
-
-          //- TODO:Switch between 3 Areas:
-          //-   Flashy area: colorful shapes, desaturated pic of me (Start here) 😘
-          //-   About me
-          //-   Contact form
           div.home-layout__bottom
             //- TODO: Make this on the bottom via flex-properties,
             //-       So good doc structure remains
@@ -36,6 +27,20 @@ block content
                 a(href='https://www.linkedin.com/in/matthew-lewin/' target='_blank') LinkedIn
                 br
                 a(href='https://github.com/Matthew-Lewin/' target='_blank') Github
+          //- .root is the area where content will be hot swapped via JS
+          div.root
+            h2.intro-text.u-margin-top-large
+              span.intro-text__part-1 Full-stack development
+              span.intro-text__part-2
+                span.Intro-text__part-2__slide with a human touch
+
+
+
+          //- TODO:Switch between 3 Areas:
+          //-   Flashy area: colorful shapes, desaturated pic of me (Start here) 😘
+          //-   About me
+          //-   Contact form
+          
 
               
     //- heroText, heroImageSrc, heroImageAlt, aboutMeText
