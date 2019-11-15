@@ -1,7 +1,7 @@
 @function makelongshadow($length, $angle) {
   $val: 0px 0px transparent;
   @for $i from 1 through $length {
-    $val: #{$val}, #{$i}px #{$i * $angle}px $color-grey-500;
+    $val: #{$val}, #{$i}px #{$i * $angle}px $color-red-700;
   }
   @return $val;
 }

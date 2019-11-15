@@ -16,6 +16,18 @@
     flex: none;
     order: 2;
 
+    a:link,
+    a:visited {
+      box-shadow: none;
+      color: $color-grey-500;
+      transition: all 0.2s;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+      color: $color-grey-200;
+    }
+
     //TODO: Better with or without top border??? ⁉
     // [class*='col-'] {
     //   border-top: 3px solid $color-grey-500;

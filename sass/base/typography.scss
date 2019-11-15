@@ -60,12 +60,14 @@ i {
 }
 
 .heading-primary {
-  font-size: $font-size-4;
+  font-size: $font-size-3;
+  color: $color-grey-400;
   line-height: 0.8;
 }
 
 .heading-secondary {
-  font-size: $font-size-5;
+  font-size: $font-size-4;
+  color: $color-grey-500;
   font-weight: 400;
-  line-height: 0.8;
+  line-height: 1.4;
 }
