@@ -1,19 +1,14 @@
 @keyframes burst_in {
   0% {
-    text-shadow: makelongshadow(100, 1);
-    color: $color-grey-300;
+    text-shadow: makelongshadow(50, 1);
+    color: $color-red-400;
     transform: scale(1.5, 1.5);
   }
   10% {
-    text-shadow: makelongshadow(100, 1.5);
-    color: $color-grey-300;
+    text-shadow: makelongshadow(50, 1.5);
     transform: scale(1.5, 1.5);
   }
-  15% {
-    color: $color-grey-300;
-  }
   20% {
-    color: $color-red-500;
     text-shadow: none;
     transform: scale(1.1, 1.1);
   }
@@ -21,9 +16,8 @@
     opacity: 1;
   }
   80% {
-    opacity: 0;
     color: $color-red-500;
-    transform: scale(0.85, 0.9);
+    transform: scale(0.99, 0.99);
   }
 
   100% {

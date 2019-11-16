@@ -2,6 +2,7 @@
   flex: 2 1 auto;
   align-self: flex-start;
   width: 100%;
+  z-index: 3;
 
   .intro-text {
     &__heading {
@@ -11,7 +12,9 @@
       animation: burst_in 3.5s;
       animation-fill-mode: backwards;
       outline: none;
-      white-space: nowrap;
+      white-space: wrap;
+      width: 65%;
+      position: relative;
     }
   }
 }

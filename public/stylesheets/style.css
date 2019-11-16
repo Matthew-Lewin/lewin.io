@@ -1,19 +1,14 @@
 @keyframes burst_in {
   0% {
-    text-shadow: 0px 0px transparent, 1px 1px #a0aec0, 2px 2px #a0aec0, 3px 3px #a0aec0, 4px 4px #a0aec0, 5px 5px #a0aec0, 6px 6px #a0aec0, 7px 7px #a0aec0, 8px 8px #a0aec0, 9px 9px #a0aec0, 10px 10px #a0aec0, 11px 11px #a0aec0, 12px 12px #a0aec0, 13px 13px #a0aec0, 14px 14px #a0aec0, 15px 15px #a0aec0, 16px 16px #a0aec0, 17px 17px #a0aec0, 18px 18px #a0aec0, 19px 19px #a0aec0, 20px 20px #a0aec0, 21px 21px #a0aec0, 22px 22px #a0aec0, 23px 23px #a0aec0, 24px 24px #a0aec0, 25px 25px #a0aec0, 26px 26px #a0aec0, 27px 27px #a0aec0, 28px 28px #a0aec0, 29px 29px #a0aec0, 30px 30px #a0aec0, 31px 31px #a0aec0, 32px 32px #a0aec0, 33px 33px #a0aec0, 34px 34px #a0aec0, 35px 35px #a0aec0, 36px 36px #a0aec0, 37px 37px #a0aec0, 38px 38px #a0aec0, 39px 39px #a0aec0, 40px 40px #a0aec0, 41px 41px #a0aec0, 42px 42px #a0aec0, 43px 43px #a0aec0, 44px 44px #a0aec0, 45px 45px #a0aec0, 46px 46px #a0aec0, 47px 47px #a0aec0, 48px 48px #a0aec0, 49px 49px #a0aec0, 50px 50px #a0aec0, 51px 51px #a0aec0, 52px 52px #a0aec0, 53px 53px #a0aec0, 54px 54px #a0aec0, 55px 55px #a0aec0, 56px 56px #a0aec0, 57px 57px #a0aec0, 58px 58px #a0aec0, 59px 59px #a0aec0, 60px 60px #a0aec0, 61px 61px #a0aec0, 62px 62px #a0aec0, 63px 63px #a0aec0, 64px 64px #a0aec0, 65px 65px #a0aec0, 66px 66px #a0aec0, 67px 67px #a0aec0, 68px 68px #a0aec0, 69px 69px #a0aec0, 70px 70px #a0aec0, 71px 71px #a0aec0, 72px 72px #a0aec0, 73px 73px #a0aec0, 74px 74px #a0aec0, 75px 75px #a0aec0, 76px 76px #a0aec0, 77px 77px #a0aec0, 78px 78px #a0aec0, 79px 79px #a0aec0, 80px 80px #a0aec0, 81px 81px #a0aec0, 82px 82px #a0aec0, 83px 83px #a0aec0, 84px 84px #a0aec0, 85px 85px #a0aec0, 86px 86px #a0aec0, 87px 87px #a0aec0, 88px 88px #a0aec0, 89px 89px #a0aec0, 90px 90px #a0aec0, 91px 91px #a0aec0, 92px 92px #a0aec0, 93px 93px #a0aec0, 94px 94px #a0aec0, 95px 95px #a0aec0, 96px 96px #a0aec0, 97px 97px #a0aec0, 98px 98px #a0aec0, 99px 99px #a0aec0, 100px 100px #a0aec0;
-    color: #e2e8f0;
+    text-shadow: 0px 0px transparent, 1px 1px #141922, 2px 2px #141922, 3px 3px #141922, 4px 4px #141922, 5px 5px #141922, 6px 6px #141922, 7px 7px #141922, 8px 8px #141922, 9px 9px #141922, 10px 10px #141922, 11px 11px #141922, 12px 12px #141922, 13px 13px #141922, 14px 14px #141922, 15px 15px #141922, 16px 16px #141922, 17px 17px #141922, 18px 18px #141922, 19px 19px #141922, 20px 20px #141922, 21px 21px #141922, 22px 22px #141922, 23px 23px #141922, 24px 24px #141922, 25px 25px #141922, 26px 26px #141922, 27px 27px #141922, 28px 28px #141922, 29px 29px #141922, 30px 30px #141922, 31px 31px #141922, 32px 32px #141922, 33px 33px #141922, 34px 34px #141922, 35px 35px #141922, 36px 36px #141922, 37px 37px #141922, 38px 38px #141922, 39px 39px #141922, 40px 40px #141922, 41px 41px #141922, 42px 42px #141922, 43px 43px #141922, 44px 44px #141922, 45px 45px #141922, 46px 46px #141922, 47px 47px #141922, 48px 48px #141922, 49px 49px #141922, 50px 50px #141922;
+    color: #ed64a6;
     transform: scale(1.5, 1.5);
   }
   10% {
-    text-shadow: 0px 0px transparent, 1px 1.5px #a0aec0, 2px 3px #a0aec0, 3px 4.5px #a0aec0, 4px 6px #a0aec0, 5px 7.5px #a0aec0, 6px 9px #a0aec0, 7px 10.5px #a0aec0, 8px 12px #a0aec0, 9px 13.5px #a0aec0, 10px 15px #a0aec0, 11px 16.5px #a0aec0, 12px 18px #a0aec0, 13px 19.5px #a0aec0, 14px 21px #a0aec0, 15px 22.5px #a0aec0, 16px 24px #a0aec0, 17px 25.5px #a0aec0, 18px 27px #a0aec0, 19px 28.5px #a0aec0, 20px 30px #a0aec0, 21px 31.5px #a0aec0, 22px 33px #a0aec0, 23px 34.5px #a0aec0, 24px 36px #a0aec0, 25px 37.5px #a0aec0, 26px 39px #a0aec0, 27px 40.5px #a0aec0, 28px 42px #a0aec0, 29px 43.5px #a0aec0, 30px 45px #a0aec0, 31px 46.5px #a0aec0, 32px 48px #a0aec0, 33px 49.5px #a0aec0, 34px 51px #a0aec0, 35px 52.5px #a0aec0, 36px 54px #a0aec0, 37px 55.5px #a0aec0, 38px 57px #a0aec0, 39px 58.5px #a0aec0, 40px 60px #a0aec0, 41px 61.5px #a0aec0, 42px 63px #a0aec0, 43px 64.5px #a0aec0, 44px 66px #a0aec0, 45px 67.5px #a0aec0, 46px 69px #a0aec0, 47px 70.5px #a0aec0, 48px 72px #a0aec0, 49px 73.5px #a0aec0, 50px 75px #a0aec0, 51px 76.5px #a0aec0, 52px 78px #a0aec0, 53px 79.5px #a0aec0, 54px 81px #a0aec0, 55px 82.5px #a0aec0, 56px 84px #a0aec0, 57px 85.5px #a0aec0, 58px 87px #a0aec0, 59px 88.5px #a0aec0, 60px 90px #a0aec0, 61px 91.5px #a0aec0, 62px 93px #a0aec0, 63px 94.5px #a0aec0, 64px 96px #a0aec0, 65px 97.5px #a0aec0, 66px 99px #a0aec0, 67px 100.5px #a0aec0, 68px 102px #a0aec0, 69px 103.5px #a0aec0, 70px 105px #a0aec0, 71px 106.5px #a0aec0, 72px 108px #a0aec0, 73px 109.5px #a0aec0, 74px 111px #a0aec0, 75px 112.5px #a0aec0, 76px 114px #a0aec0, 77px 115.5px #a0aec0, 78px 117px #a0aec0, 79px 118.5px #a0aec0, 80px 120px #a0aec0, 81px 121.5px #a0aec0, 82px 123px #a0aec0, 83px 124.5px #a0aec0, 84px 126px #a0aec0, 85px 127.5px #a0aec0, 86px 129px #a0aec0, 87px 130.5px #a0aec0, 88px 132px #a0aec0, 89px 133.5px #a0aec0, 90px 135px #a0aec0, 91px 136.5px #a0aec0, 92px 138px #a0aec0, 93px 139.5px #a0aec0, 94px 141px #a0aec0, 95px 142.5px #a0aec0, 96px 144px #a0aec0, 97px 145.5px #a0aec0, 98px 147px #a0aec0, 99px 148.5px #a0aec0, 100px 150px #a0aec0;
-    color: #e2e8f0;
+    text-shadow: 0px 0px transparent, 1px 1.5px #141922, 2px 3px #141922, 3px 4.5px #141922, 4px 6px #141922, 5px 7.5px #141922, 6px 9px #141922, 7px 10.5px #141922, 8px 12px #141922, 9px 13.5px #141922, 10px 15px #141922, 11px 16.5px #141922, 12px 18px #141922, 13px 19.5px #141922, 14px 21px #141922, 15px 22.5px #141922, 16px 24px #141922, 17px 25.5px #141922, 18px 27px #141922, 19px 28.5px #141922, 20px 30px #141922, 21px 31.5px #141922, 22px 33px #141922, 23px 34.5px #141922, 24px 36px #141922, 25px 37.5px #141922, 26px 39px #141922, 27px 40.5px #141922, 28px 42px #141922, 29px 43.5px #141922, 30px 45px #141922, 31px 46.5px #141922, 32px 48px #141922, 33px 49.5px #141922, 34px 51px #141922, 35px 52.5px #141922, 36px 54px #141922, 37px 55.5px #141922, 38px 57px #141922, 39px 58.5px #141922, 40px 60px #141922, 41px 61.5px #141922, 42px 63px #141922, 43px 64.5px #141922, 44px 66px #141922, 45px 67.5px #141922, 46px 69px #141922, 47px 70.5px #141922, 48px 72px #141922, 49px 73.5px #141922, 50px 75px #141922;
     transform: scale(1.5, 1.5);
   }
-  15% {
-    color: #e2e8f0;
-  }
   20% {
-    color: #d53f8c;
     text-shadow: none;
     transform: scale(1.1, 1.1);
   }
@@ -21,9 +16,8 @@
     opacity: 1;
   }
   80% {
-    opacity: 0;
     color: #d53f8c;
-    transform: scale(0.85, 0.9);
+    transform: scale(0.99, 0.99);
   }
   100% {
     opacity: 1;
@@ -537,6 +531,7 @@ i {
   flex: 2 1 auto;
   align-self: flex-start;
   width: 100%;
+  z-index: 3;
 }
 .root .intro-text__heading {
   font-size: 4.8rem;
@@ -545,7 +540,9 @@ i {
   animation: burst_in 3.5s;
   animation-fill-mode: backwards;
   outline: none;
-  white-space: nowrap;
+  white-space: wrap;
+  width: 65%;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
