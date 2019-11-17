@@ -36,6 +36,7 @@ body {
   font-weight: normal;
   line-height: 1.4;
   color: $color-grey-500;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {

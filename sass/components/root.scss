@@ -7,9 +7,18 @@
     &__heading {
       font-size: calc(#{$font-size-1} * 1.25);
       line-height: 1;
-      text-shadow: 0 1rem 2rem rgba(darken($color-grey-900, 2%), 0.2);
+      text-shadow: $shadow-primary;
+      span {
+        animation-fill-mode: backwards;
+      }
+      &__first-line {
+        animation: fade-in-left 1s cubic-bezier(0.59, 0.01, 0.28, 1)
+          0.5s;
+      }
       &__line {
         display: block;
+        animation: fade-in-left 1s cubic-bezier(0.59, 0.01, 0.28, 1)
+          0.75s;
       }
       &__line:last-child {
         background: radial-gradient($color-red-500, $color-red-700);
@@ -17,7 +26,9 @@
         display: inline-block;
         padding: 1rem 2rem;
         transform: translate(-2rem, -1rem);
+        animation: slide-in 1s cubic-bezier(0.59, 0.01, 0.28, 1) 1s;
         z-index: -1;
+        animation-fill-mode: backwards;
       }
     }
   }
