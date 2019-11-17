@@ -11,8 +11,8 @@
 
 @keyframes slide-in {
   0% {
-    transform: translateX(-2rem, -1rem) scale(0.9);
-    filter: blur(50%);
+    transform: translateX(-2rem, -1rem) scale(0.7);
+    filter: blur(100%);
     opacity: 0;
   }
   50% {
@@ -20,5 +20,17 @@
   }
   100% {
     filter: none;
+    transform: translateX(-2rem, -1rem) scale(1);
+  }
+}
+
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
