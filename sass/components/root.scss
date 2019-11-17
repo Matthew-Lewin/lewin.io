@@ -5,14 +5,20 @@
 
   .intro-text {
     &__heading {
-      font-size: $font-size-1;
-      font-weight: 700;
-      color: $color-grey-300;
-      animation: burst_in 3s;
-      animation-fill-mode: backwards;
-      outline: none;
-      white-space: nowrap;
+      font-size: calc(#{$font-size-1} * 1.25);
       line-height: 1;
+      text-shadow: 0 1rem 2rem rgba(darken($color-grey-900, 2%), 0.2);
+      &__line {
+        display: block;
+      }
+      &__line:last-child {
+        background: radial-gradient($color-red-500, $color-red-700);
+        color: $color-grey-200;
+        display: inline-block;
+        padding: 1rem 2rem;
+        transform: translate(-2rem, -1rem);
+        z-index: -1;
+      }
     }
   }
 }
