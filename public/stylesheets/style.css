@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-@keyframes burst_in {
-  0% {
-    text-shadow: 0px 0px transparent, 1px 1px #141922, 2px 2px #141922, 3px 3px #141922, 4px 4px #141922, 5px 5px #141922, 6px 6px #141922, 7px 7px #141922, 8px 8px #141922, 9px 9px #141922, 10px 10px #141922, 11px 11px #141922, 12px 12px #141922, 13px 13px #141922, 14px 14px #141922, 15px 15px #141922, 16px 16px #141922, 17px 17px #141922, 18px 18px #141922, 19px 19px #141922, 20px 20px #141922, 21px 21px #141922, 22px 22px #141922, 23px 23px #141922, 24px 24px #141922, 25px 25px #141922, 26px 26px #141922, 27px 27px #141922, 28px 28px #141922, 29px 29px #141922, 30px 30px #141922, 31px 31px #141922, 32px 32px #141922, 33px 33px #141922, 34px 34px #141922, 35px 35px #141922, 36px 36px #141922, 37px 37px #141922, 38px 38px #141922, 39px 39px #141922, 40px 40px #141922, 41px 41px #141922, 42px 42px #141922, 43px 43px #141922, 44px 44px #141922, 45px 45px #141922, 46px 46px #141922, 47px 47px #141922, 48px 48px #141922, 49px 49px #141922, 50px 50px #141922;
-    color: #ed64a6;
-    transform: scale(1.5, 1.5);
-  }
-  10% {
-    text-shadow: 0px 0px transparent, 1px 1.5px #141922, 2px 3px #141922, 3px 4.5px #141922, 4px 6px #141922, 5px 7.5px #141922, 6px 9px #141922, 7px 10.5px #141922, 8px 12px #141922, 9px 13.5px #141922, 10px 15px #141922, 11px 16.5px #141922, 12px 18px #141922, 13px 19.5px #141922, 14px 21px #141922, 15px 22.5px #141922, 16px 24px #141922, 17px 25.5px #141922, 18px 27px #141922, 19px 28.5px #141922, 20px 30px #141922, 21px 31.5px #141922, 22px 33px #141922, 23px 34.5px #141922, 24px 36px #141922, 25px 37.5px #141922, 26px 39px #141922, 27px 40.5px #141922, 28px 42px #141922, 29px 43.5px #141922, 30px 45px #141922, 31px 46.5px #141922, 32px 48px #141922, 33px 49.5px #141922, 34px 51px #141922, 35px 52.5px #141922, 36px 54px #141922, 37px 55.5px #141922, 38px 57px #141922, 39px 58.5px #141922, 40px 60px #141922, 41px 61.5px #141922, 42px 63px #141922, 43px 64.5px #141922, 44px 66px #141922, 45px 67.5px #141922, 46px 69px #141922, 47px 70.5px #141922, 48px 72px #141922, 49px 73.5px #141922, 50px 75px #141922;
-    transform: scale(1.5, 1.5);
-  }
-  20% {
-    text-shadow: none;
-    transform: scale(1.1, 1.1);
-=======
 @keyframes fade-in-left {
   from {
     opacity: 0;
@@ -28,16 +13,10 @@
     transform: translateX(-2rem, -1rem) scale(0.7);
     filter: blur(100%);
     opacity: 0;
->>>>>>> 666343a27fb3e138b9656e4855c7f9a2390f3453
   }
   50% {
     opacity: 1;
   }
-<<<<<<< HEAD
-  80% {
-    color: #d53f8c;
-    transform: scale(0.99, 0.99);
-=======
   100% {
     filter: none;
     transform: translateX(-2rem, -1rem) scale(1);
@@ -47,7 +26,6 @@
   from {
     opacity: 0;
     transform: translateY(2rem);
->>>>>>> 666343a27fb3e138b9656e4855c7f9a2390f3453
   }
   to {
     opacity: 1;
@@ -265,6 +243,10 @@ button:hover:active, button:focus:active {
 .home-layout__bottom a:focus,
 .home-layout__bottom a:active {
   color: #f5f5f5;
+}
+.home-layout__bottom .current-page:link,
+.home-layout__bottom .current-page:visited {
+  color: #e2e8f0;
 }
 
 @font-face {
@@ -607,13 +589,6 @@ i {
 .root__change {
   animation: fade-in-bottom 1s cubic-bezier(0.59, 0.01, 0.28, 1) 2s;
   animation-fill-mode: backwards;
-<<<<<<< HEAD
-  outline: none;
-  white-space: wrap;
-  width: 65%;
-  position: relative;
-=======
->>>>>>> 666343a27fb3e138b9656e4855c7f9a2390f3453
 }
 
 /*# sourceMappingURL=style.css.map */

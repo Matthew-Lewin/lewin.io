@@ -33,5 +33,9 @@
     //   border-top: 3px solid $color-grey-500;
     //   padding-top: 1rem;
     // }
+    .current-page:link,
+    .current-page:visited {
+      color: $color-grey-300;
+    }
   }
 }

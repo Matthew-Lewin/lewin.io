@@ -1,6 +1,7 @@
 extends layout
 
 block content  
+
   main
     section.home-page
       div.container
@@ -13,9 +14,9 @@ block content
                 span.intro-text__heading__line makes 
                 span.intro-text__heading__line web apps
             div.flex-grid.u-margin-top-small
-              div.col-1-of-3
+              div.col-1-of-4
                 button.root__change About me
-              div.col-1-of-3
+              div.col-1-of-4
                 button.root__change Get in touch
 
           div.home-layout__bottom
@@ -25,30 +26,30 @@ block content
                 h3.heading-secondary= heroText
               div.col-1-of-4
                 nav.main-nav
-                  a(href='/').main-nav__link Home
-                  br
-                  a(href='/projects').main-nav__link My Work
-                  br
-                  a(href='/blog').main-nav__link Blog
+                  each link in internalLinks
+                    ul
+                      li
+                        a(href=link.url class=link.active ? "current-page" : '')= link.name
+                  else
+                    p links are missing... 💀
               div.col-1-of-4
-                a(href='https://twitter.com/Matthew_M_Lewin' target='_blank') Twitter
-                br
-                a(href='https://www.linkedin.com/in/matthew-lewin/' target='_blank') LinkedIn
-                br
-                a(href='https://github.com/Matthew-Lewin/' target='_blank') Github
+                each link in externalLinks
+                  ul
+                    li
+                      a(href=link.url) #{link.name}
+                else
+                  p links are missing... 💀
           //- .root is the area where content will be hot swapped via JS
           
-
-
+  
 
           //- TODO:Switch between 3 Areas:
-          //-   Flashy area: colorful shapes, desaturated pic of me (Start here) 😘
           //-   About me
           //-   Contact form
           
 
               
-    //- heroText, heroImageSrc, heroImageAlt, aboutMeText
+          //- heroText, heroImageSrc, heroImageAlt, aboutMeText
 
-    //- TODO: On mobile, all link columns disappear
-    //-   Replace them with a menu button on the bottom of the screen that brings up links
+          //- TODO: On mobile, all link columns disappear
+          //-   Replace them with a menu button on the bottom of the screen that brings up links

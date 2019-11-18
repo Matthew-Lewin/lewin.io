@@ -6,17 +6,6 @@
 
   .intro-text {
     &__heading {
-<<<<<<< HEAD
-      font-size: $font-size-1;
-      font-weight: 700;
-      color: $color-grey-300;
-      animation: burst_in 3.5s;
-      animation-fill-mode: backwards;
-      outline: none;
-      white-space: wrap;
-      width: 65%;
-      position: relative;
-=======
       font-size: calc(#{$font-size-1} * 1.25);
       line-height: 1;
       text-shadow: $shadow-primary;
@@ -43,7 +32,6 @@
         z-index: -1;
         animation-fill-mode: backwards;
       }
->>>>>>> 666343a27fb3e138b9656e4855c7f9a2390f3453
     }
   }
 
