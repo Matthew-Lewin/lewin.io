@@ -5,20 +5,31 @@ block content
     section.home-page
       div.container
         div.home-layout
+
+          div.root
+            div.intro-text.u-margin-top-large
+              h1.intro-text__heading
+                span.intro-text__heading__first-line Matthew 
+                span.intro-text__heading__line makes 
+                span.intro-text__heading__line web apps
+            div.flex-grid.u-margin-top-small
+              div.col-1-of-3
+                button.root__change About me
+              div.col-1-of-3
+                button.root__change Get in touch
+
           div.home-layout__bottom
-            //- TODO: Make this on the bottom via flex-properties,
-            //-       So good doc structure remains
             div.flex-grid
               div.col-2-of-4
-                h1.heading-primary= name
-                h2.heading-secondary= heroText
+                h2.heading-primary= name
+                h3.heading-secondary= heroText
               div.col-1-of-4
                 nav.main-nav
-                  a(href='/') Home
+                  a(href='/').main-nav__link Home
                   br
-                  a(href='/projects') Projects
+                  a(href='/projects').main-nav__link My Work
                   br
-                  a(href='/blog') Blog
+                  a(href='/blog').main-nav__link Blog
               div.col-1-of-4
                 a(href='https://twitter.com/Matthew_M_Lewin' target='_blank') Twitter
                 br
@@ -26,14 +37,7 @@ block content
                 br
                 a(href='https://github.com/Matthew-Lewin/' target='_blank') Github
           //- .root is the area where content will be hot swapped via JS
-          div.root
-            div.intro-text.u-margin-top-large
-              h2.intro-text__heading Full stack development with a human touch
-            div.flex-grid.u-margin-top-medium
-              div.col-1-of-3
-                button.root__change About Me
-              div.col-1-of-3
-                button.root__change My Work
+          
 
 
 

@@ -1,26 +1,46 @@
-@keyframes burst_in {
+<<<<<<< HEAD
+
+=======
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in {
   0% {
-    text-shadow: makelongshadow(50, 1);
-    color: $color-red-400;
-    transform: scale(1.5, 1.5);
+    transform: translateX(-2rem, -1rem) scale(0.7);
+    filter: blur(100%);
+    opacity: 0;
+>>>>>>> 666343a27fb3e138b9656e4855c7f9a2390f3453
   }
-  10% {
-    text-shadow: makelongshadow(50, 1.5);
-    transform: scale(1.5, 1.5);
-  }
-  20% {
-    text-shadow: none;
-    transform: scale(1.1, 1.1);
-  }
-  75% {
+  50% {
     opacity: 1;
   }
+<<<<<<< HEAD
   80% {
     color: $color-red-500;
     transform: scale(0.99, 0.99);
-  }
-
+=======
   100% {
+    filter: none;
+    transform: translateX(-2rem, -1rem) scale(1);
+>>>>>>> 666343a27fb3e138b9656e4855c7f9a2390f3453
+  }
+}
+
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
 }

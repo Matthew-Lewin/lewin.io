@@ -6,6 +6,7 @@
 
   .intro-text {
     &__heading {
+<<<<<<< HEAD
       font-size: $font-size-1;
       font-weight: 700;
       color: $color-grey-300;
@@ -15,6 +16,39 @@
       white-space: wrap;
       width: 65%;
       position: relative;
+=======
+      font-size: calc(#{$font-size-1} * 1.25);
+      line-height: 1;
+      text-shadow: $shadow-primary;
+      span {
+        animation-fill-mode: backwards;
+      }
+      &__first-line {
+        display: inline-block;
+        animation: fade-in-left 1s cubic-bezier(0.59, 0.01, 0.28, 1)
+          0.5s;
+      }
+      &__line {
+        display: block;
+        animation: fade-in-left 1s cubic-bezier(0.59, 0.01, 0.28, 1)
+          0.75s;
+      }
+      &__line:last-child {
+        background: radial-gradient($color-red-500, $color-red-700);
+        color: $color-grey-200;
+        display: inline-block;
+        padding: 1rem 2rem;
+        transform: translate(-2rem, -1rem);
+        animation: slide-in 3s cubic-bezier(0.59, 0.01, 0.28, 1) 1.25s;
+        z-index: -1;
+        animation-fill-mode: backwards;
+      }
+>>>>>>> 666343a27fb3e138b9656e4855c7f9a2390f3453
     }
+  }
+
+  &__change {
+    animation: fade-in-bottom 1s cubic-bezier(0.59, 0.01, 0.28, 1) 2s;
+    animation-fill-mode: backwards;
   }
 }
