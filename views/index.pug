@@ -37,14 +37,19 @@ block content
                       li
                         a(href=link.url class='nav-link') #{link.name}
                   else
-                    p links are missing... 💀
+                    p links are missing... 😘
             nav.sm-nav
               div.flex-grid
                 div.sm-1-of-2
                   h2.heading-primary= name
-                  h3.heading-secondary= heroText
                 div.sm-1-of-2
-                  button.sm-menu Menu
+                  ul#sm-nav__list
+                    each link in internalLinks
+                      li
+                        a(href=link.url class="sm-nav__link")= link.name
+                    each link in externalLinks
+                      li
+                        a(href=link.url class="sm-nav__link")= link.name
           //- .root is the area where content will be hot swapped via JS
           
   

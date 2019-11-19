@@ -5,6 +5,8 @@
 @media (max-width: 670px) {
   .sm-nav {
     display: block;
+    &__list {
+    }
   }
   .main-nav {
     display: none;
