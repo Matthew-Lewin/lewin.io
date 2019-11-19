@@ -6,7 +6,6 @@ block content
     section.home-page
       div.container
         div.home-layout
-
           div.root
             div.intro-text.u-margin-top-large
               h1.intro-text__heading
@@ -14,31 +13,38 @@ block content
                 span.intro-text__heading__line makes 
                 span.intro-text__heading__line web apps
             div.flex-grid.u-margin-top-small
-              div.col-1-of-4
+              div.col-1-of-4.sm-1-of-2
                 button.root__change About me
-              div.col-1-of-4
+              div.col-1-of-4.sm-1-of-2
                 button.root__change Get in touch
 
           div.home-layout__bottom
-            div.flex-grid
-              div.col-2-of-4
-                h2.heading-primary= name
-                h3.heading-secondary= heroText
-              div.col-1-of-4
-                nav.main-nav
-                  each link in internalLinks
+            nav.main-nav
+              div.flex-grid
+                div.col-2-of-4
+                  h2.heading-primary= name
+                  h3.heading-secondary= heroText
+                div.col-1-of-4
+                    each link in internalLinks
+                      ul
+                        li
+                          a(href=link.url class=link.active ? "current-page nav-link" : 'nav-link')= link.name
+                    else
+                      p links are missing... 💀
+                div.col-1-of-4
+                  each link in externalLinks
                     ul
                       li
-                        a(href=link.url class=link.active ? "current-page" : '')= link.name
+                        a(href=link.url class='nav-link') #{link.name}
                   else
                     p links are missing... 💀
-              div.col-1-of-4
-                each link in externalLinks
-                  ul
-                    li
-                      a(href=link.url) #{link.name}
-                else
-                  p links are missing... 💀
+            nav.sm-nav
+              div.flex-grid
+                div.sm-1-of-2
+                  h2.heading-primary= name
+                  h3.heading-secondary= heroText
+                div.sm-1-of-2
+                  button.sm-menu Menu
           //- .root is the area where content will be hot swapped via JS
           
   

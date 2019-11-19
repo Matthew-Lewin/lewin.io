@@ -39,3 +39,10 @@
     }
   }
 }
+
+@media (max-width: 670px) {
+  .home-layout {
+    &__bottom {
+    }
+  }
+}

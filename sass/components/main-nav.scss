@@ -1,2 +1,12 @@
-.main-nav {
+.sm-nav {
+  display: none;
+}
+
+@media (max-width: 670px) {
+  .sm-nav {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+  }
 }

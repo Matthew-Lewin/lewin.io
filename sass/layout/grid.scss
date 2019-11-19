@@ -69,9 +69,20 @@
   }
 }
 
-// Media query for the grid
-/* @media (max-width: ) {
+@media (max-width: 670px) {
   .flex-grid {
-    display:block;
+    [class*='col-']:not(.sm-1-of-2),
+    [class*='col-']:not(:last-child):not(.sm-1-of-2),
+    [class*='col-']:last-child:not(.sm-1-of-2) {
+      width: 100%;
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+    .sm-1-of-2 {
+      width: calc((100% - (1 * #{$gutter-horizontal})) * (1 / 2));
+    }
+    .sm-1-of-2:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
   }
-} */
+}

@@ -311,16 +311,21 @@ i {
 .heading-primary {
   font-size: 3.1rem;
   color: #cbd5e0;
-  line-height: 0.8;
+  line-height: 1;
 }
 
 .heading-secondary {
   font-size: 2.5rem;
   color: #a0aec0;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.1;
 }
 
+@media (max-width: 670px) {
+  .heading-primary {
+    margin-bottom: 2rem;
+  }
+}
 /* .hero-box {
   &__image {
     //filter: brightness(50%) grayscale(100%);
@@ -529,11 +534,21 @@ i {
   margin-left: calc( (100% - (1 * 2rem)) * (1 / 2) );
 }
 
-/* @media (max-width: ) {
-  .flex-grid {
-    display:block;
+@media (max-width: 670px) {
+  .flex-grid [class*=col-]:not(.sm-1-of-2),
+.flex-grid [class*=col-]:not(:last-child):not(.sm-1-of-2),
+.flex-grid [class*=col-]:last-child:not(.sm-1-of-2) {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
   }
-} */
+  .flex-grid .sm-1-of-2 {
+    width: calc((100% - (1 * 2rem)) * (1 / 2));
+  }
+  .flex-grid .sm-1-of-2:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
 .hero-section {
   position: relative;
   height: 70vh;
@@ -554,6 +569,19 @@ i {
   left: 20rem;
 }
 
+.sm-nav {
+  display: none;
+}
+
+@media (max-width: 670px) {
+  .sm-nav {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+}
 .root {
   flex: 2 1 auto;
   align-self: flex-start;
