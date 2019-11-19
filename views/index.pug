@@ -43,7 +43,8 @@ block content
                 div.sm-1-of-2
                   h2.heading-primary= name
                 div.sm-1-of-2
-                  ul#sm-nav__list
+                  button.sm-nav__button(aria-controls="sm-nav__list") Menu
+                  ul#sm-nav__list.sm-nav__list
                     each link in internalLinks
                       li
                         a(href=link.url class="sm-nav__link")= link.name

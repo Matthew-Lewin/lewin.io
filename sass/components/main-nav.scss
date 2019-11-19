@@ -5,7 +5,30 @@
 @media (max-width: 670px) {
   .sm-nav {
     display: block;
-    &__list {
+    .sm-nav__list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      z-index: 3;
+      text-align: center;
+      width: 100vw;
+      background: $color-grey-900;
+      box-shadow: $shadow-primary;
+      transform: translateY(-100vh);
+      transition: all 0.3s;
+
+      li {
+        border-bottom: 2px solid lighten($color-grey-900, 2%);
+        a {
+          display: inline-block;
+          padding: 2rem 8rem;
+        }
+      }
+    }
+    .sm-nav__opened {
+      transform: translateY(0);
     }
   }
   .main-nav {
