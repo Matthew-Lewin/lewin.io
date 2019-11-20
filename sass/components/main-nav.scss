@@ -30,6 +30,10 @@
     .sm-nav__opened {
       transform: translateY(0);
     }
+
+    .sm-nav__button {
+      box-shadow: none;
+    }
   }
   .main-nav {
     display: none;

@@ -45,9 +45,9 @@ block content
                 div.sm-1-of-2
                   button.sm-nav__button(aria-controls="sm-nav__list") Menu
                   ul#sm-nav__list.sm-nav__list
-                    each link in internalLinks
+                    each link, index in internalLinks
                       li
-                        a(href=link.url class="sm-nav__link")= link.name
+                        a(href=link.url class="sm-nav__link" id=(index === 0 ? "first_link" : ""))= link.name
                     each link in externalLinks
                       li
                         a(href=link.url class="sm-nav__link")= link.name
