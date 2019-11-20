@@ -6,17 +6,21 @@ block content
     section.home-page
       div.container
         div.home-layout
-          div.root
+          div.root#root
             div.intro-text.u-margin-top-large
               h1.intro-text__heading
                 span.intro-text__heading__first-line Matthew 
                 span.intro-text__heading__line makes 
                 span.intro-text__heading__line web apps
+              picture.intro-text__image
+                source(srcset="images/profile_1_small-min.png" media='min-width:670px')
+                img(src='images/profile_1-min.png' alt="Matthew Lewin's smiling face")
             div.flex-grid.u-margin-top-small
               div.col-1-of-4.sm-1-of-2
-                button.root__change About me
+                a.root__change(href="/about") About me
               div.col-1-of-4.sm-1-of-2
-                button.root__change Get in touch
+                a.root__change(href='/contact') Get in touch
+            
 
           div.home-layout__bottom
             nav.main-nav

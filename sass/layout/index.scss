@@ -15,6 +15,7 @@
   &__bottom {
     flex: none;
     order: 2;
+    z-index: 2;
 
     a:link,
     a:visited {
