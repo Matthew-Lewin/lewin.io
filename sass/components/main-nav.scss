@@ -33,6 +33,17 @@
 
     .sm-nav__button {
       box-shadow: none;
+      display: block;
+      padding: 1rem 2rem;
+      transform: translateY(-1rem);
+      color: $color-grey-500;
+
+      &:active,
+      &:focus,
+      &:hover {
+        box-shadow: none;
+        color: $color-grey-300;
+      }
     }
   }
   .main-nav {

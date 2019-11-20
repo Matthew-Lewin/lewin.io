@@ -603,6 +603,14 @@ i {
   }
   .sm-nav .sm-nav__button {
     box-shadow: none;
+    display: block;
+    padding: 1rem 2rem;
+    transform: translateY(-1rem);
+    color: #a0aec0;
+  }
+  .sm-nav .sm-nav__button:active, .sm-nav .sm-nav__button:focus, .sm-nav .sm-nav__button:hover {
+    box-shadow: none;
+    color: #e2e8f0;
   }
 
   .main-nav {
