@@ -4,10 +4,11 @@
 
 title  
 content  
-tags  
-article_id  
+tags
+article_id
 category_id
-time
+is_displayed
+time_published
 
 ## Categories
 
