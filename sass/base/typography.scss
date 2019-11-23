@@ -74,6 +74,9 @@ i {
 }
 
 @media (max-width: 670px) {
+  html {
+    font-size: 50%;
+  }
   .heading-primary {
     margin-bottom: 2rem;
   }

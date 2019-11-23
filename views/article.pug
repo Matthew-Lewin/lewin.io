@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    main
+    div.container.u-margin-top-medium
+        h1.u-margin-bottom-small.heading-primary=title
+
+        each result in results
+            article.blog-post
+                div.flex-grid
+                    div.col-1-of-3
+                        h2.blog-post__title=result.title
+                        p.blog-post__author=result.author
+                        time.blog-post__date=result.time
+                    div.col-2-of-3
+                        p.blog-post__excerpt=result.excerpt
+                        a(href=`/blog/${result.article_id}`) Read More &rarr;
