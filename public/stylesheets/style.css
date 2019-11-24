@@ -215,7 +215,7 @@ button:hover:active, button:focus:active {
   box-shadow: inset 0 -1em 0 #b83280, 0 0.25rem 0.5rem rgba(15, 18, 25, 0.2);
 }
 
-.home-page {
+main {
   border-top: 3px solid #b83280;
 }
 
@@ -320,6 +320,10 @@ i {
   color: #a0aec0;
   font-weight: 400;
   line-height: 1.1;
+}
+
+.disabled {
+  color: #4a5568;
 }
 
 @media (max-width: 670px) {
@@ -622,6 +626,14 @@ i {
     display: none;
   }
 }
+.fixed {
+  position: fixed;
+  background-color: #1a202c;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2rem;
+}
+
 .root {
   flex: 2 1 auto;
   align-self: flex-start;
@@ -713,7 +725,7 @@ i {
   padding-top: 2rem;
 }
 .blog-post__title {
-  font-size: 2rem;
+  font-size: 3.1rem;
 }
 .blog-post__author, .blog-post__date {
   font-size: 1.6rem;
@@ -726,6 +738,10 @@ i {
 
 .blog-post:not(:last-of-type) {
   margin-bottom: 8rem;
+}
+
+.blog-post:last-of-type {
+  margin-bottom: 16rem;
 }
 
 /*# sourceMappingURL=style.css.map */

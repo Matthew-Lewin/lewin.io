@@ -73,6 +73,10 @@ i {
   line-height: 1.1;
 }
 
+.disabled {
+  color: $color-grey-700;
+}
+
 @media (max-width: 670px) {
   html {
     font-size: 50%;

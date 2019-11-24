@@ -50,3 +50,10 @@
     display: none;
   }
 }
+.fixed {
+  position: fixed;
+  background-color: $color-grey-900;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2rem;
+}

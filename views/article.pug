@@ -4,14 +4,32 @@ block content
     main
     div.container.u-margin-top-medium
         h1.u-margin-bottom-small.heading-primary=title
-
-        each result in results
-            article.blog-post
-                div.flex-grid
-                    div.col-1-of-3
-                        h2.blog-post__title=result.title
-                        p.blog-post__author=result.author
-                        time.blog-post__date=result.time
-                    div.col-2-of-3
-                        p.blog-post__excerpt=result.excerpt
-                        a(href=`/blog/${result.article_id}`) Read More &rarr;
+        if results
+            each result in results
+                article.blog-post
+                    div.flex-grid
+                        div.col-1-of-3
+                            h2.blog-post__title=result.title
+                            p.blog-post__author=result.author
+                            time.blog-post__date=result.time
+                        div.col-2-of-3
+                            p.blog-post__excerpt=result.excerpt
+                            a(href=`/blog/${result.article_id}`) Read More &rarr;
+            else
+                p No more articles...
+                a(href='/blog') Back to articles &rarr;
+            
+        nav.pagination
+            div.flex-grid.u-margin-bottom-medium
+                div.col-1-of-3
+                    //- If this is the first page, no previous
+                    if page
+                        a(href=(`/blog/?page=${page - 1}`)) Previous
+                    else
+                        p.disabled Previous
+                div.col-1-of-3
+                    //- Check whether there are any more articles
+                    if ((page * 5) + 5) > article_count
+                        p.disabled Next
+                    else
+                        a(href=(`/blog/?page=${page + 1}`)) Next
