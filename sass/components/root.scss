@@ -19,6 +19,7 @@
       }
       &__line {
         display: block;
+        z-index: 2;
         animation: fade-in-left 1s cubic-bezier(0.59, 0.01, 0.28, 1)
           0.75s;
       }
@@ -29,7 +30,7 @@
         padding: 1rem 2rem;
         transform: translate(-2rem, -1rem);
         animation: slide-in 3s cubic-bezier(0.59, 0.01, 0.28, 1) 1.25s;
-        z-index: -4;
+        z-index: -8;
         animation-fill-mode: backwards;
       }
     }
@@ -42,6 +43,7 @@
       z-index: -10;
       filter: grayscale(80%) brightness(50%);
       clip-path: circle(50% at 50%);
+      -webkit-clip-path: circle(50% at 50%);
     }
     @media (max-width: 670px) {
       &__image {
