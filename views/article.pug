@@ -14,7 +14,7 @@ block content
                             time.blog-post__date=result.time
                         div.col-2-of-3
                             p.blog-post__excerpt=result.excerpt
-                            a(href=`/blog/${result.article_id}`) Read More &rarr;
+                            a.blog-post__link(href=`/blog/${result.article_id}`) Read More &rarr;
             else
                 p.u-margin-bottom-large No more articles... &nbsp;
                     a(href='/blog') Back to articles &rarr;

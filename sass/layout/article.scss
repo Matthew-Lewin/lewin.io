@@ -2,7 +2,7 @@
   border-top: 2px solid $color-grey-600;
   padding-top: 2rem;
   &__title {
-    font-size: $font-size-3;
+    font-size: $font-size-4;
   }
   &__author,
   &__date {
@@ -12,6 +12,11 @@
   }
   &__author {
     margin-top: 1rem;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 2rem;
   }
 }
 

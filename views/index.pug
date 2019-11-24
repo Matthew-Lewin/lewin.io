@@ -15,15 +15,17 @@ block content
               picture.intro-text__image
                 source(srcset="images/profile_1_small-min.png" media='min-width:670px')
                 img(src='images/profile_1-min.png' alt="Matthew Lewin's smiling face")
-            div.flex-grid.u-margin-top-small
+              
+            div.flex-grid.u-margin-top-small.u-margin-bottom-small
               div.col-1-of-4.sm-1-of-2
-                a.root__change(href="/about") About me
+                a.root__change(href="/projects") My Work
               div.col-1-of-4.sm-1-of-2
                 a.root__change(href='/contact') Get in touch
+            p.intro-text__about.u-margin-bottom-medium= aboutMeText
             
 
           div.home-layout__bottom
-            nav.main-nav.fixed
+            nav.main-nav
               div.flex-grid
                 div.col-2-of-4
                   h2.heading-primary= name
@@ -39,7 +41,7 @@ block content
                   each link in externalLinks
                     ul
                       li
-                        a(href=link.url class='nav-link') #{link.name}
+                        a(href=link.url class='nav-link' target='_blank') #{link.name}
                   else
                     p links are missing... 😘
             nav.sm-nav

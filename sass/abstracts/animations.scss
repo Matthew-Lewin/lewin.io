@@ -8,6 +8,16 @@
     transform: translateX(0);
   }
 }
+@keyframes fade-in-image {
+  from {
+    filter: opacity(0) grayscale(80%) brightness(50%);
+    transform: translateX(5rem);
+  }
+  to {
+    filter: opacity(100%) grayscale(80%) brightness(50%);
+    transform: none;
+  }
+}
 
 @keyframes slide-in {
   0% {
