@@ -222,7 +222,7 @@ main {
 .home-layout {
   padding-top: 4rem;
   display: flex;
-  height: 90vh;
+  height: 80vh;
   flex-direction: Column;
   justify-content: space-between;
 }
@@ -578,7 +578,8 @@ i {
   left: 20rem;
 }
 
-.sm-nav {
+.sm-nav,
+.sm-nav__list {
   display: none;
 }
 
@@ -586,8 +587,20 @@ i {
   .sm-nav {
     display: block;
   }
-  .sm-nav .sm-nav__list {
-    position: absolute;
+  .sm-nav .sm-nav__button {
+    box-shadow: none;
+    display: block;
+    padding: 1rem 2rem;
+    transform: translateY(-1rem);
+    color: #a0aec0;
+  }
+  .sm-nav .sm-nav__button:active, .sm-nav .sm-nav__button:focus, .sm-nav .sm-nav__button:hover {
+    box-shadow: none;
+    color: #e2e8f0;
+  }
+
+  .sm-nav__list {
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -600,26 +613,16 @@ i {
     transform: translateY(-100vh);
     transition: all 0.3s;
   }
-  .sm-nav .sm-nav__list li {
+  .sm-nav__list li {
     border-bottom: 2px solid #1e2532;
   }
-  .sm-nav .sm-nav__list li a {
+  .sm-nav__list li a {
     display: inline-block;
     padding: 2rem 8rem;
   }
-  .sm-nav .sm-nav__opened {
+
+  .sm-nav__opened {
     transform: translateY(0);
-  }
-  .sm-nav .sm-nav__button {
-    box-shadow: none;
-    display: block;
-    padding: 1rem 2rem;
-    transform: translateY(-1rem);
-    color: #a0aec0;
-  }
-  .sm-nav .sm-nav__button:active, .sm-nav .sm-nav__button:focus, .sm-nav .sm-nav__button:hover {
-    box-shadow: none;
-    color: #e2e8f0;
   }
 
   .main-nav {
@@ -741,7 +744,7 @@ i {
 }
 
 .blog-post:last-of-type {
-  margin-bottom: 16rem;
+  margin-bottom: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

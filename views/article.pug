@@ -20,16 +20,46 @@ block content
                 a(href='/blog') Back to articles &rarr;
             
         nav.pagination
-            div.flex-grid.u-margin-bottom-medium
-                div.col-1-of-3
+            div.flex-grid.u-margin-bottom-large
+                div.col-1-of-3.sm-1-of-2
                     //- If this is the first page, no previous
                     if page
                         a(href=(`/blog/?page=${page - 1}`)) Previous
                     else
                         p.disabled Previous
-                div.col-1-of-3
+                div.col-1-of-3.sm-1-of-2
                     //- Check whether there are any more articles
                     if ((page * 5) + 5) > article_count
                         p.disabled Next
                     else
                         a(href=(`/blog/?page=${page + 1}`)) Next
+        
+        div.home-layout__bottom.fixed
+            nav.main-nav
+              div.flex-grid
+                div.col-2-of-4
+                  h2.heading-primary Matthew Lewin
+                  h3.heading-secondary Full Stack Developer
+                div.col-1-of-4
+                    ul
+                        li
+                            a(href='/' class='nav-link' id="first_link") Home
+                        li
+                            a(href='/blog' class='nav-link') Writing
+                        li
+                            a(href='/projects' class='nav-link') Projects
+            nav.sm-nav.fixed 
+                div.flex-grid
+                    div.sm-1-of-2
+                        h2.heading-primary Matthew Lewin
+                    div.sm-1-of-2
+                        button.sm-nav__button(aria-controls="sm-nav__list") Menu
+            ul#sm-nav__list.sm-nav__list
+                ul
+                    li
+                        a(href='/' class='nav-link') Home
+                    li
+                        a(href='/blog' class='nav-link') Writing
+                    li
+                        a(href='/projects' class='nav-link') Projects
+                    
