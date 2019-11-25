@@ -8,7 +8,7 @@ pool.getConnection((err, connection) => {
   connection.query(
     `SELECT COUNT(article_id) AS count
   FROM lewin_io.articles
-  WHERE category_id = 1`,
+  WHERE category_id = 1 AND is_displayed = 1`,
     (err, result, fields) => {
       if (err) throw err
       article_count = result[0].count
@@ -39,7 +39,7 @@ exports.blog_list = (req, res, next) => {
       `SELECT article_id, title, tags, author, excerpt,
     DATE_FORMAT(time_published, "%M %D, %Y") AS time
      FROM lewin_io.articles
-     WHERE category_id = 1
+     WHERE category_id = 1 AND is_displayed = 1
      ORDER BY article_id DESC
      LIMIT ${page * 5}, 5`,
       (err, result, fields) => {

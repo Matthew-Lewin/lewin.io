@@ -784,6 +784,16 @@ i {
 }
 .article__content {
   line-height: calc(1.5em + 0.2vw);
+  transform: translateY(-5px);
+}
+.article__content p,
+.article__content h1,
+.article__content h2,
+.article__content h3,
+.article__content h4,
+.article__content h5,
+.article__content h6 {
+  margin-bottom: 2rem;
 }
 .article__content:first-child::first-letter {
   font-size: calc(4.8rem);
