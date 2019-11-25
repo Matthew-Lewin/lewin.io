@@ -1,15 +1,8 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
+const controller = require('../controllers/projectsController')
 
-router.get('/', (req, res, next) => {
-	res.status(200).send('Welcome to the projects... 🔫')
-	next();
-});
+router.get('/', controller.project_list)
+router.get('/:id', controller.project_detail)
 
-router.get('/:id', (req, res, next) => {
-	const id = req.params.id * 1;
-	res.status(200).send(`Welcome to project # ${id}`)
-	next();
-});
-
-module.exports = router;
+module.exports = router

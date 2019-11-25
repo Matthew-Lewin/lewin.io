@@ -8,7 +8,7 @@ pool.getConnection((err, connection) => {
   connection.query(
     `SELECT COUNT(article_id) AS count
   FROM lewin_io.articles
-  WHERE category_id = 1 AND is_displayed = 1`,
+  WHERE category_id = 0 AND is_displayed = 1`,
     (err, result, fields) => {
       if (err) throw err
       article_count = result[0].count
@@ -17,19 +17,8 @@ pool.getConnection((err, connection) => {
   )
 })
 
-// connection.query(
-//   `SELECT COUNT(article_id) AS count
-//   FROM lewin_io.articles
-//   WHERE category_id = 1`,
-//   (err, result, fields) => {
-//     if (err) throw err
-//     article_count = result[0].count
-//     console.log(article_count)
-//   }
-// )
-
 // Display blog page with list of articles
-exports.blog_list = (req, res, next) => {
+exports.project_list = (req, res, next) => {
   const page = req.query.page * 1 || 0
 
   pool.getConnection((err, connection) => {
@@ -39,7 +28,7 @@ exports.blog_list = (req, res, next) => {
       `SELECT article_id, title, tags, author, excerpt,
     DATE_FORMAT(time_published, "%M %D, %Y") AS time
      FROM lewin_io.articles
-     WHERE category_id = 1 AND is_displayed = 1
+     WHERE category_id = 0 AND is_displayed = 1
      ORDER BY article_id DESC
      LIMIT ${page * 5}, 5`,
       (err, result, fields) => {
@@ -47,7 +36,7 @@ exports.blog_list = (req, res, next) => {
         console.log(result)
         res.render('article', {
           results: result,
-          title: 'Blog',
+          title: 'Projects',
           page: page,
           article_count: article_count,
         })
@@ -59,7 +48,7 @@ exports.blog_list = (req, res, next) => {
 }
 
 // Render individual blog page
-exports.blog_detail = (req, res, next) => {
+exports.project_detail = (req, res, next) => {
   pool.getConnection((err, connection) => {
     if (err) throw err
 
@@ -67,7 +56,7 @@ exports.blog_detail = (req, res, next) => {
       `SELECT article_id, title, tags, content, author,
     DATE_FORMAT(time_published, "%M %D, %Y") AS time
      FROM lewin_io.articles
-     WHERE category_id = 1 AND article_id = ${req.params.id}`,
+     WHERE category_id = 0 AND article_id = ${req.params.id}`,
       (err, result, fields) => {
         if (err) throw err
         console.log(result)
