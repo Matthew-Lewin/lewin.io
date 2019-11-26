@@ -13,12 +13,12 @@ block content
                             p.blog-post__author=result.author
                             time.blog-post__date=result.time
                             if result.git_repo
-                                a(href=result.git_repo) View the project on github
+                                a(href=result.git_repo target='_blank').blog-post__repo View the project on github
                             if result.url
-                                a(href=result.url) View the finished product
+                                a(href=result.url target='_blank').blog-post__url View the finished product
                         div.col-2-of-3
                             p.blog-post__excerpt=result.excerpt
-                            a.blog-post__link(href=`/blog/${result.article_id}`) Read More &rarr;
+                            a.blog-post__link(href=`/projects/${result.article_id}`) Read More &rarr;
             else
                 p.u-margin-bottom-large No more projects... &nbsp;
                     a(href='/projects') Back to projects &rarr;

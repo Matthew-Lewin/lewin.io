@@ -6,7 +6,7 @@
   }
   &__author,
   &__date {
-    font-size: $font-size-6;
+    font-size: $font-size-5;
     color: $color-grey-600;
     line-height: 1;
   }
@@ -14,7 +14,9 @@
     margin-top: 1rem;
   }
 
-  &__link {
+  &__link,
+  &__repo,
+  &__url {
     display: inline-block;
     margin-top: 2rem;
   }
