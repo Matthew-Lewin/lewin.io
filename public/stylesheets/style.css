@@ -759,6 +759,11 @@ i {
   margin-top: 2rem;
 }
 
+@media (max-width: 670px) {
+  .blog-post__excerpt {
+    margin-top: 4rem;
+  }
+}
 .blog-post:not(:last-of-type) {
   margin-bottom: 8rem;
 }
@@ -810,6 +815,11 @@ i {
 .article__content:first-child::first-letter {
   font-size: calc(4.8rem);
   color: #cbd5e0;
+}
+@media (max-width: 670px) {
+  .article__content {
+    margin-top: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,9 +10,11 @@ block content
                         p.article__author By #{result.author}
                         time.article__date=result.time
                         if result.git_repo
+                            br
                             a(href=result.git_repo target='_blank').article__repo Git repository
                         if result.url
-                            a(href=result.url target='_blank').article__url View project
+                            br
+                            a(href=`http://${result.url}` target='_blank').article__url View project
                     div.col-3-of-4
                         div.article__content.u-margin-bottom-large !{result.content}
             div.home-layout__bottom.fixed

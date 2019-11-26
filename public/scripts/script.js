@@ -1,4 +1,3 @@
-console.log('loaded')
 // Function that controls adding and removing styles
 let domHandler = (trigger, target, className) => {
   const element1 = document.querySelector(trigger)
@@ -10,7 +9,6 @@ let domHandler = (trigger, target, className) => {
 
 let menuToggle = (element, focusTarget) => {
   let el = document.querySelector(element)
-  console.log('🍍')
   el.addEventListener('click', () => {
     if (el.textContent == 'Menu') {
       el.textContent = 'Close'
@@ -24,9 +22,3 @@ let menuToggle = (element, focusTarget) => {
 menuToggle('.sm-nav__button', '#first_link')
 
 domHandler('.sm-nav__button', '#sm-nav__list', 'sm-nav__opened')
-//domHandler('#about', '.about-text', 'about-text--active')
-// let menuHandler = toggleText(
-//   '.sm-nav__button',
-//   '.sm-nav__button',
-//   'Close'
-// )

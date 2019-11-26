@@ -22,6 +22,11 @@
   }
 }
 
+@media (max-width: 670px) {
+  .blog-post__excerpt {
+    margin-top: 4rem;
+  }
+}
 .blog-post:not(:last-of-type) {
   margin-bottom: 8rem;
 }

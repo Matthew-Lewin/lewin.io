@@ -1,6 +1,10 @@
 require('dotenv').config()
+const compression = require('compression')
+const helmet = require('helmet')
 const express = require('express')
 const app = express()
+app.use(compression())
+app.use(helmet())
 const path = require('path')
 const port = process.env.PORT || 3000
 const indexRouter = require('./routes/indexRouter')

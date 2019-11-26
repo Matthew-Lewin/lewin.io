@@ -50,4 +50,10 @@
     font-size: calc(#{$font-size-1});
     color: $color-grey-400;
   }
+
+  @media (max-width: 670px) {
+    &__content {
+      margin-top: 4rem;
+    }
+  }
 }
