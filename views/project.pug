@@ -1,0 +1,83 @@
+extends layout
+
+block content
+    main
+    div.container.u-margin-top-medium
+        h1.u-margin-bottom-small.heading-primary=title
+        if results
+            each result in results
+                article.blog-post
+                    div.flex-grid
+                        div.col-1-of-3
+                            h2.blog-post__title=result.title
+                            p.blog-post__author=result.author
+                            time.blog-post__date=result.time
+                            if result.git_repo
+                                a(href=result.git_repo) View the project on github
+                            if result.url
+                                a(href=result.url) View the finished product
+                        div.col-2-of-3
+                            p.blog-post__excerpt=result.excerpt
+                            a.blog-post__link(href=`/blog/${result.article_id}`) Read More &rarr;
+            else
+                p.u-margin-bottom-large No more projects... &nbsp;
+                    a(href='/projects') Back to projects &rarr;
+            
+        nav.pagination
+            div.flex-grid.u-margin-bottom-large
+                div.col-1-of-3.sm-1-of-2
+                    //- If this is the first page, no previous
+                    if page
+                        a(href=(`/blog/?page=${page - 1}`)) &larr; Previous
+                    else
+                        p.disabled Previous
+                div.col-1-of-3.sm-1-of-2
+                    //- Check whether there are any more articles
+                    if ((page * 5) + 5) > article_count
+                        p.disabled Next
+                    else
+                        a(href=(`/blog/?page=${page + 1}`)) Next &rarr;
+        
+        div.home-layout__bottom.fixed
+            nav.main-nav
+              div.flex-grid
+                div.col-2-of-4
+                  h2.heading-primary Matthew Lewin
+                  h3.heading-secondary Full Stack Developer
+                div.col-1-of-4
+                    ul
+                        li
+                            a(href='/' class='nav-link' id="first_link") Home
+                        li
+                            a(href='/blog' class='nav-link') Writing
+                        li
+                            a(href='/projects' class='nav-link') Projects
+                div.col-1-of-4
+                    ul
+                        li
+                            a(href='https://twitter.com/Matthew_M_Lewin' target="_blank" class='nav-link') Twitter
+                        li
+                            a(href='https://www.linkedin.com/in/matthew-lewin/' target="_blank" class='nav-link') LinkedIn
+                        li
+                            a(href='https://github.com/Matthew-Lewin' target="_blank" class='nav-link') Github
+            nav.sm-nav.fixed 
+                div.flex-grid
+                    div.sm-1-of-2
+                        h2.heading-primary Matthew Lewin
+                    div.sm-1-of-2
+                        button.sm-nav__button(aria-controls="sm-nav__list") Menu
+            ul#sm-nav__list.sm-nav__list
+                ul
+                    li
+                        a(href='/' class='nav-link') Home
+                    li
+                        a(href='/blog' class='nav-link') Writing
+                    li
+                        a(href='/projects' class='nav-link') Projects
+                    li
+                        a(href='https://twitter.com/Matthew_M_Lewin' target="_blank" class='nav-link') Twitter
+                    li
+                        a(href='https://www.linkedin.com/in/matthew-lewin/' target="_blank" class='nav-link') LinkedIn
+                    li
+                        a(href='https://github.com/Matthew-Lewin' target="_blank" class='nav-link') Github
+                

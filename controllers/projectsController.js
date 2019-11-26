@@ -26,7 +26,8 @@ exports.project_list = (req, res, next) => {
 
     connection.query(
       `SELECT article_id, title, tags, author, excerpt,
-    DATE_FORMAT(time_published, "%M %D, %Y") AS time
+    DATE_FORMAT(time_published, "%M %D, %Y") AS time,
+    git_repo, url
      FROM lewin_io.articles
      WHERE category_id = 0 AND is_displayed = 1
      ORDER BY article_id DESC
@@ -34,7 +35,7 @@ exports.project_list = (req, res, next) => {
       (err, result, fields) => {
         if (err) throw err
         console.log(result)
-        res.render('article', {
+        res.render('project', {
           results: result,
           title: 'Projects',
           page: page,
@@ -54,13 +55,14 @@ exports.project_detail = (req, res, next) => {
 
     connection.query(
       `SELECT article_id, title, tags, content, author,
-    DATE_FORMAT(time_published, "%M %D, %Y") AS time
+    DATE_FORMAT(time_published, "%M %D, %Y") AS time,
+    git_repo, url
      FROM lewin_io.articles
      WHERE category_id = 0 AND article_id = ${req.params.id}`,
       (err, result, fields) => {
         if (err) throw err
         console.log(result)
-        res.render('article_detail', {
+        res.render('project_detail', {
           result: result[0],
           title: result[0].title,
         })
