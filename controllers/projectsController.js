@@ -12,7 +12,6 @@ pool.getConnection((err, connection) => {
     (err, result, fields) => {
       if (err) throw err
       article_count = result[0].count
-      console.log(article_count)
     }
   )
 })
@@ -34,7 +33,7 @@ exports.project_list = (req, res, next) => {
      LIMIT ${page * 5}, 5`,
       (err, result, fields) => {
         if (err) throw err
-        console.log(result)
+
         res.render('project', {
           results: result,
           title: 'Projects',
@@ -61,7 +60,7 @@ exports.project_detail = (req, res, next) => {
      WHERE category_id = 0 AND article_id = ${req.params.id}`,
       (err, result, fields) => {
         if (err) throw err
-        console.log(result)
+
         res.render('project_detail', {
           result: result[0],
           title: result[0].title,

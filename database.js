@@ -13,7 +13,6 @@ pool.getConnection((err, connection) => {
   connection.query(
     `SELECT COUNT(*) FROM lewin_io.articles`,
     (err, result, fields) => {
-      console.log(result)
       connection.release()
 
       if (err) throw err

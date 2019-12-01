@@ -7,7 +7,7 @@ const indexData = JSON.parse(
     path.join(__dirname, `../index-content.json`),
     'utf8',
     (err, data) => {
-      if (err) console.log(err)
+      if (err) console.log(error)
       return data
     }
   )

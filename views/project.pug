@@ -13,6 +13,7 @@ block content
                             p.blog-post__author=result.author
                             time.blog-post__date=result.time
                             if result.git_repo
+                                br
                                 a(href=result.git_repo target='_blank').blog-post__repo View the project on github
                             if result.url
                                 //- a(href=result.url target='_blank').blog-post__url View the finished product
