@@ -12,13 +12,13 @@
       "active": true
     },
     {
-      "name": "Projects",
-      "url": "/projects",
+      "name": "Writing",
+      "url": "/blog",
       "active": false
     },
     {
-      "name": "Writing",
-      "url": "/blog",
+      "name": "Projects",
+      "url": "/projects",
       "active": false
     }
   ],

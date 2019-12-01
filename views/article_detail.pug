@@ -2,6 +2,7 @@ extends layout
 
 block content
     main
+        a.skip-link(href='#content') Skip to content
         div.container.u-margin-top-medium
             article.article
                 div.flex-grid
@@ -9,6 +10,7 @@ block content
                         h1.article__title=result.title
                         p.article__author By #{result.author}
                         time.article__date=result.time
+                        a.back-link(href='javascript:history.back()') &larr; Go back
                     div.col-3-of-4
                         div.article__content.u-margin-bottom-large !{result.content}
             div.home-layout__bottom.fixed

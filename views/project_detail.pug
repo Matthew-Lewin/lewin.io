@@ -2,6 +2,7 @@ extends layout
 
 block content
     main
+        a.skip-link(href='#content') Skip to content
         div.container.u-margin-top-medium
             article.article
                 div.flex-grid
@@ -12,9 +13,12 @@ block content
                         if result.git_repo
                             a(href=result.git_repo target='_blank').article__repo Git repository
                         if result.url
-                            a(href=result.url target='_blank').article__url View project
+                            //- a(href=result.url target='_blank').article__url View project
+                        br
+                        a.back-link(href='javascript:history.back()') &larr; Go back
+
                     div.col-3-of-4
-                        div.article__content.u-margin-bottom-large !{result.content}
+                        div.article__content.u-margin-bottom-large#content !{result.content}
             div.home-layout__bottom.fixed
                 nav.main-nav
                     div.flex-grid
